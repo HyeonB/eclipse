@@ -13,7 +13,7 @@ public class BoardWriteAction implements Action{
 	@Override
 	public String execute(HttpServletRequest req, HttpServletResponse resp) {
 		HttpSession session = req.getSession();
-		String id = session.
+		String id = session.getId();
 		String title = req.getParameter("title");
 		String detail = req.getParameter("detail");
 

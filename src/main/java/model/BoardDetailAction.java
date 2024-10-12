@@ -13,7 +13,7 @@ public class BoardDetailAction implements Action {
 	public String execute(HttpServletRequest req, HttpServletResponse resp) {
 		
 		BoardDAO dao = new BoardDAO();
-		BoardDTO dto = dao.getBoard();
+		BoardDTO dto;
 		
 		req.setAttribute("dto", dto);		
 		
